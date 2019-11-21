@@ -125,12 +125,13 @@ fn main() {
                 3 => {
                     println!("He dosen't belive you at first but sees your banoculors");
                     pause();
-                    println!("He leaves you alove");
+                    println!("He leaves you alone");
                     pause();
-                    println!("You head back to base");
+                    println!("you go back at looking through your bonoculors");
                     pause();
-                    println!("You have been given £100");
+                    println!("you see that the front entrance is heavily guarded with an anti tank launcher posted at the right side of the entrance and there is 15 guards with assult rifles")
                     pause();
+                    println!("however at the back entrance it is lightly guarded ")
                     player.money = 100;
                     base(&mut player);
                 }
@@ -157,12 +158,14 @@ fn main() {
 }
 
 fn pass(mut player: &mut Player) {
-    player.money = 999999999999;
+    player.money = 99999999;
     println!("1) The begining");
     println!("2) Base");
-    match valid_input(|x| *x < 3 && *x > 0) {
+    println!("3) Mission 1");
+    match valid_input(|x| *x < 4 && *x > 0) {
         1 => main(),
         2 => base(&mut player),
+        3 => mission1(&mut player),
         _ => unreachable!(),
     }
 }
@@ -173,7 +176,8 @@ fn mission1(mut player: &mut Player) {
     pause();
     println!("Crossroads: As your second mission we are going to send you to capture the base you have reconed.");
     pause();
-    println!("Crossroads: What weapons do you want to bring?");
+    println!("the info you gained from the recon was useful")
+
 }
 
 fn dead() {
