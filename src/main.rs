@@ -129,9 +129,9 @@ fn main() {
                     pause();
                     println!("you go back at looking through your bonoculors");
                     pause();
-                    println!("you see that the front entrance is heavily guarded with an anti tank launcher posted at the right side of the entrance and there is 15 guards with assult rifles")
+                    println!("you see that the front entrance is heavily guarded with an anti tank launcher posted at the right side of the entrance and there is 15 guards with assult rifles");
                     pause();
-                    println!("however at the back entrance it is lightly guarded ")
+                    println!("however at the back entrance it is lightly guarded only with 4 guardes but it has a sniper always looking at it you decide how you are going to infiltrate the base Good luck");
                     player.money = 100;
                     base(&mut player);
                 }
